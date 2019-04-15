@@ -1,37 +1,42 @@
+<!-- ne pas modifier le html et le head -->
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/img/Linux-icon.png">
+    <title>Exo6Javascript1</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-    <title>Exercice6JavaScript</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-md-3 offset-md-6 mt-3 p-3 bg-primary text-left justify-content-center">
-                <form class="center">
-                    <h3>Exercice 6</h3>
-                    <h4>Dans un fichier séparé, créer une fonction permettant d’afficher le reste de la division de deux
-                        nombres. L’appeler depuis le fichier html.</h4>
-                    <!-- Premier nombre -->
-                    <label class="d-block" for="nombre1">Inserer un première nombre.</label>
-                    <input class="d-inline-block" id="nombre1" type="text">
-                    <!-- Deuxième nombre -->
-                    <label class="d-block" for="nombre2">Inserer un deuxième nombre plus petit que le premier</label>
-                    <input id="nombre2" type="text">
-                </form>
-                <p>Appuyer "Valider" pour faire le calcul.</p>
-                <button onclick="myFunction()">Valider</button>
-            </div>
-        </div>
+    
+    <!-- START Bootstrap-Cookie-Alert -->
+    <div class="container">
+        <!-- container de la page pour mise en forme bootstrap, ne pas toucher -->
+        <main>
+            <span class="bg-primary">Exercice 6 :
+                Dans un fichier séparé, créer une fonction permettant d’afficher le reste de la division de deux nombres. L’appeler depuis le fichier html.</span>
+            <p class=" font-weight-bold text-danger">Saisir deux nombres</p>
+            <form>
+                <label for="firstNumber">Premier nombre : </label>
+                <input type="text" id="firstNumber" name="firstNumber"/><br/>
+                <label for="secondNumber">Deuxième nombre : </label>
+                <input type="text" id="secondNumber" name="secondNumber"/><br/>
+                <button id="submit" name="submit" onclick="resteDivision()" >Valider</button>
+                <!-- <button id="submit" name ="submit" onclick="multiplication()">Valider</button> -->
+            </form>
+        </main>
     </div>
-                <!-- SCRIIIIIIIIIIIIIIIIIIIIPT -->
-    <script type="text/javascript" src="script.js"></script>
-
+    <!-- scripts boostrap -->
+    <script src="js/main.js"></script> <!--  mon script js perso -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 </body>
 
 </html>
